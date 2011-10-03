@@ -1,5 +1,5 @@
 # !/bin/sh
-# Créé par Alexis Greppo
+# Créer par Alexis Greppo
 # Site : http://www.zen-tech.info
  
  
@@ -57,7 +57,7 @@ function install_chromium {
  
 }
  
-# On recupere la version installee et la version en ligne
+# On récupère la version installee et la version en ligne
 get_sys_version
 get_svn_version
  
