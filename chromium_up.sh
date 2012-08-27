@@ -9,6 +9,9 @@ function get_sys_version {
  
 	if [ -f "/Applications/Chromium.app/Contents/Info.plist" ];then
 		SYS_VERSION=`defaults read /Applications/Chromium.app/Contents/Info SVNRevision`
+		if [ $? -ne 0 ];then
+			SYS_VERSION=`defaults read /Applications/Chromium.app/Contents/Info SCMRevision`
+		fi
 	else
 		SYS_VERSION=0
 	fi
